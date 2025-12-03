@@ -14,11 +14,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Update "Select All" checkbox state based on individual checkboxes
     rowCheckboxes.forEach(checkbox => {
         checkbox.addEventListener('change', function() {
-            const allChecked = Array.from(rowCheckboxes).every(cb => cb.checked);
-            const someChecked = Array.from(rowCheckboxes).some(cb => cb.checked);
-            
-            selectAllCheckbox.checked = allChecked;
-            selectAllCheckbox.indeterminate = someChecked && !allChecked;
+            if (selectAllCheckbox) {
+                const allChecked = Array.from(rowCheckboxes).every(cb => cb.checked);
+                const someChecked = Array.from(rowCheckboxes).some(cb => cb.checked);
+                
+                selectAllCheckbox.checked = allChecked;
+                selectAllCheckbox.indeterminate = someChecked && !allChecked;
+            }
         });
     });
     
