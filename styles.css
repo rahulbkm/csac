@@ -170,9 +170,7 @@ body {
     background-color: #e1dfdd;
 }
 
-.toolbar-btn.dropdown::after {
-    content: '';
-}
+
 
 /* Content Header */
 .content-header {
@@ -240,9 +238,7 @@ body {
     font-weight: 600;
 }
 
-.tab.dropdown::after {
-    content: '';
-}
+
 
 /* Content Card */
 .content-card {
