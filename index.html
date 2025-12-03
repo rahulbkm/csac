@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBA Direct Banking Profile - Dynamics 365</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+        <div class="nav-left">
+            <div class="logo">Dynamics 365</div>
+            <div class="nav-item active">Copilot Service admin center</div>
+            <div class="nav-item env-badge">SANDBOX</div>
+        </div>
+        <div class="nav-right">
+            <button class="icon-btn" title="Settings" aria-label="Settings">⚙️</button>
+            <button class="icon-btn" title="Help" aria-label="Help">?</button>
+            <button class="icon-btn" title="Profile" aria-label="Profile">👤</button>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-link active">
+                    <span class="icon">📊</span>
+                    <span>Overview</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <span class="icon">👥</span>
+                    <span>User management</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <span class="icon">🤖</span>
+                    <span>AI Agents</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <span class="icon">💬</span>
+                    <span>Channels</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <span class="icon">📋</span>
+                    <span>Workstreams</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <span class="icon">📁</span>
+                    <span>Queues</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <span class="icon">📝</span>
+                    <span>Session templates</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <span class="icon">📱</span>
+                    <span>Application tabs</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <span class="icon">⚡</span>
+                    <span>Quick replies</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <span class="icon">🏷️</span>
+                    <span>Context variables</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="content">
+            <!-- Page Header -->
+            <div class="page-header">
+                <h1>CBA Direct Banking Profile (Demo) - Saved</h1>
+                <div class="tabs">
+                    <button class="tab">General</button>
+                    <button class="tab">Timeout Rules</button>
+                    <button class="tab active">Automated Messages</button>
+                    <button class="tab">Related</button>
+                </div>
+            </div>
+
+            <!-- Command Bar -->
+            <div class="command-bar">
+                <button class="cmd-btn primary" aria-label="Save">💾 Save</button>
+                <button class="cmd-btn" aria-label="Save & Close">💾 Save &amp; Close</button>
+                <button class="cmd-btn" aria-label="New">➕ New</button>
+                <button class="cmd-btn" aria-label="Delete">🗑️ Delete</button>
+                <button class="cmd-btn" aria-label="Refresh">🔄 Refresh</button>
+                <button class="cmd-btn" aria-label="Check Access">🔒 Check Access</button>
+            </div>
+
+            <!-- Content Section -->
+            <div class="content-section">
+                <!-- Grid Action Buttons -->
+                <div class="grid-actions">
+                    <button class="action-btn primary" aria-label="New Message">➕ New Message</button>
+                    <button class="action-btn" aria-label="Add Existing Message">➕ Add Existing Message</button>
+                </div>
+
+                <!-- Data Grid -->
+                <div class="data-grid">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="checkbox-col">
+                                    <input type="checkbox" id="select-all" aria-label="Select all rows">
+                                </th>
+                                <th>Name</th>
+                                <th>Channel Type</th>
+                                <th>Message trigger</th>
+                                <th>Automated Message</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="checkbox-col">
+                                    <input type="checkbox" aria-label="Select Greeting Message for Async row">
+                                </td>
+                                <td>Greeting Message for Async...</td>
+                                <td>Custom</td>
+                                <td>Greeting Message for Async Channels and Voice</td>
+                                <td>The humans have got your ...</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-col">
+                                    <input type="checkbox" aria-label="Select Welcome (agent joined) row">
+                                </td>
+                                <td>Welcome (agent joined)</td>
+                                <td>Live chat</td>
+                                <td>Agent joined conversation</td>
+                                <td>The humans have got your ...</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-col">
+                                    <input type="checkbox" aria-label="Select Greeting message new row">
+                                </td>
+                                <td>Greeting message new - As...</td>
+                                <td>Live chat</td>
+                                <td>Greeting Message for Async Channels and Voice</td>
+                                <td>Welcome to Direct Banking</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
