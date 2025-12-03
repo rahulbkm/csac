@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamics 365 | Copilot Service admin center</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+        <div class="nav-left">
+            <span class="logo">Dynamics 365 | Copilot Service admin center</span>
+        </div>
+        <div class="nav-center">
+            <span class="sandbox-badge">SANDBOX</span>
+        </div>
+        <div class="nav-right">
+            <button class="icon-btn" title="Search" aria-label="Search">🔍</button>
+            <button class="icon-btn" title="Ideas" aria-label="Ideas">💡</button>
+            <button class="icon-btn" title="Add" aria-label="Add">➕</button>
+            <button class="icon-btn" title="Filter" aria-label="Filter">🔽</button>
+            <button class="icon-btn" title="Settings" aria-label="Settings">⚙️</button>
+            <button class="icon-btn" title="Help" aria-label="Help">❓</button>
+            <button class="icon-btn" title="Feedback" aria-label="Feedback">😊</button>
+            <button class="icon-btn profile" title="Profile" aria-label="Profile">👤</button>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- Left Sidebar Navigation -->
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <div class="nav-item active">Overview</div>
+                    <div class="nav-item">User management</div>
+                    <div class="nav-item">AI Agents</div>
+                    <div class="nav-item">Channels</div>
+                    <div class="nav-item">Intent</div>
+                    <div class="nav-item">Queues</div>
+                    <div class="nav-item">Routing</div>
+                    <div class="nav-item">Workstreams</div>
+                    <div class="nav-item">Case settings</div>
+                    <div class="nav-item">Customer settings</div>
+                    <div class="nav-item">Quality management</div>
+                </div>
+                
+                <div class="nav-section">
+                    <div class="nav-section-title">Support experience</div>
+                    <div class="nav-item">Overview</div>
+                    <div class="nav-item">Workspaces</div>
+                    <div class="nav-item">Productivity</div>
+                    <div class="nav-item">Knowledge</div>
+                    <div class="nav-item">Collaboration</div>
+                </div>
+                
+                <div class="nav-section">
+                    <div class="nav-section-title">Operations</div>
+                    <div class="nav-item">Overview</div>
+                    <div class="nav-item">Insights</div>
+                    <div class="nav-item">Calendar</div>
+                    <div class="nav-item">Service terms</div>
+                    <div class="nav-item">Service scheduling</div>
+                    <div class="nav-item">Miscellaneous</div>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="content-area">
+            <!-- Toolbar -->
+            <div class="toolbar">
+                <button class="toolbar-btn" title="Back" aria-label="Back">← Back</button>
+                <button class="toolbar-btn" title="Show Chart" aria-label="Show Chart">📊 Show Chart</button>
+                <button class="toolbar-btn" title="Open in new window" aria-label="Open in new window">🗖</button>
+                <button class="toolbar-btn" title="Save" aria-label="Save">💾 Save</button>
+                <button class="toolbar-btn" title="Save & Close" aria-label="Save and Close">💾 Save & Close</button>
+                <button class="toolbar-btn" title="New" aria-label="New">➕ New</button>
+                <button class="toolbar-btn" title="Delete" aria-label="Delete">🗑️ Delete</button>
+                <button class="toolbar-btn" title="Refresh" aria-label="Refresh">🔄 Refresh</button>
+                <button class="toolbar-btn" title="Check Access" aria-label="Check Access">🔒 Check Access</button>
+                <button class="toolbar-btn dropdown" title="Share" aria-label="Share">📤 Share ▼</button>
+            </div>
+
+            <!-- Header -->
+            <div class="content-header">
+                <div>
+                    <h1 class="page-title">CBA Direct Banking Profile (Demo) - Saved</h1>
+                    <p class="page-subtitle">Channel Profile</p>
+                </div>
+                <button class="form-assist-btn">Form assist</button>
+            </div>
+
+            <!-- Tabs -->
+            <div class="tabs">
+                <div class="tab">General</div>
+                <div class="tab">Timeout Rules</div>
+                <div class="tab active">Automated Messages</div>
+                <div class="tab dropdown">Related ▼</div>
+            </div>
+
+            <!-- Content Card -->
+            <div class="content-card">
+                <!-- Table Toolbar -->
+                <div class="table-toolbar">
+                    <button class="table-btn primary" aria-label="New Message">+ New Message</button>
+                    <button class="table-btn" aria-label="Add Existing Message">Add Existing Message</button>
+                    <button class="table-btn" aria-label="More actions">⋮</button>
+                </div>
+
+                <!-- Data Table -->
+                <div class="data-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="checkbox-col"><input type="checkbox"></th>
+                                <th class="sortable">Name <span class="sort-icon">⬍</span></th>
+                                <th class="sortable">Channel Type <span class="sort-icon">⬍</span></th>
+                                <th class="sortable">Message trigger <span class="sort-icon">⬍</span></th>
+                                <th class="sortable">Automated Message <span class="sort-icon">⬍</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="checkbox-col"><input type="checkbox"></td>
+                                <td class="name-col">
+                                    <a href="#" class="link">Greeting Message for Async...</a>
+                                </td>
+                                <td>Custom</td>
+                                <td>Greeting Message for Async Channels and Voice</td>
+                                <td class="message-preview">The humans have got your...</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-col"><input type="checkbox"></td>
+                                <td class="name-col">
+                                    <a href="#" class="link">Welcome (agent joined)</a>
+                                </td>
+                                <td>Live chat</td>
+                                <td>Agent joined conversation</td>
+                                <td class="message-preview">The humans have got your...</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-col"><input type="checkbox"></td>
+                                <td class="name-col">
+                                    <a href="#" class="link">Greeting message new - As...</a>
+                                </td>
+                                <td>Live chat</td>
+                                <td>Greeting Message for Async Channels and Voice</td>
+                                <td class="message-preview">Welcome to Direct Banking</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Table Footer -->
+                <div class="table-footer">
+                    <span>Rows: 3</span>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
